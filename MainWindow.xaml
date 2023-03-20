@@ -1,0 +1,90 @@
+﻿<Window x:Class="_4_Collections.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_4_Collections"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen" Background="LightBlue">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="DeepSkyBlue"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="450"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Register Your Details" FontSize="15" FontWeight="UltraLight"
+               HorizontalContentAlignment="Center"/>
+        <Label Content="Name" Grid.Row="1" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,80,0"/>
+        <Label Content="Student ID" Grid.Row="2" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,50,0"/>
+        <Label Content="College Name" Grid.Row="3" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,28,0"/>
+        <Label Content="Batch" Grid.Row="4" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,80,0"/>
+        <Label Content="Mobile Number" Grid.Row="5" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,17,0"/>
+        <Label Content="Gender" Grid.Row="6" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,70,0"/>
+        <Label Content="Age" Grid.Row="7" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,90,0"/>
+        <Label Content="Skills" Grid.Row="8" Grid.Column="0" FontSize="15" HorizontalContentAlignment="Right" FontWeight="UltraLight" 
+               Margin="0,0,90,0"/>
+        <TextBox x:Name="txtbox_name" Grid.Row="1" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_studid" Grid.Row="2" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_clgname" Grid.Row="3" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_batch" Grid.Row="4" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_mobilenumber" Grid.Row="5" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_gender" Grid.Row="6" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_age" Grid.Row="7" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtbox_skills" Grid.Row="8" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Left"/>
+        <Grid Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2">
+            <Button x:Name="btn_dictionary" Content="Dictionary"  Margin="-540,20,0,-22" Width="90" Click="btn_dictionary_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btn_hashset" Content="HashSet"  Margin="-150,20,0,-22" Width="90" Click="btn_hashset_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btn_stack" Content="Stack"  Margin="200,20,0,-22" Width="90" Click="btn_stack_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btn_queue" Content="Queue"  Margin="550,20,0,-22" Width="90" Click="btn_queue_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
